@@ -1,0 +1,42 @@
+<div class="bs-example bs-example-tabs">
+  <h3 style="font-family:微软雅黑; text-align:center"><strong>结构变异分析</strong></h3>
+  <hr style="margin-top:0px">
+
+  <p  class="text-info" style="font-family:微软雅黑;font-size:115%;border-left-style: solid; border-width:3px;border-color:#019944;padding-left:5px"><strong>甲基化芯片数据预处理</strong></p>
+  <p>使用R语言统计软件的IMA(Illumina Methylation Analyzer）包，对Illumina 450K芯片原始数据进行标准化处理，将探针的信号值转换为甲基化位点的AVG_Beta值。</p>
+  <hr style="margin-top:0px;margin-bottom:8px">
+
+  <p  class="text-info" style="font-family:微软雅黑;font-size:115%;border-left-style: solid; border-width:3px;border-color:#019944;padding-left:5px"><strong>差异甲基化分析</strong></p>
+  <p>可采用Illumina的GenomeStudio软件、IMA、非参数检验等方法进行差异甲基化位点的筛选；对于两组重复样本实验常采用T-test结合AVG_Beta差值的方法。</p>
+  <hr style="margin-top:0px;margin-bottom:8px">
+
+  <p  class="text-info" style="font-family:微软雅黑;font-size:115%;border-left-style: solid; border-width:3px;border-color:#019944;padding-left:5px"><strong>基因功能元件分布统计</strong></p>
+  <p>根据差异甲基化位点的基因组定位，统计其在基因功能元件1stExon、3'UTR、5'UTR、TSS200、TSS1500、和Body区域的分布，及启动子或非启动子区域、CGI或非CGI的分布。</p>
+  <hr style="margin-top:0px;margin-bottom:8px">
+  <img src="/img/application_solution/bioinformatics_basic/structure/image1.png" style="width:700px;align:left;">
+
+  <p  class="text-info" style="font-family:微软雅黑;font-size:115%;border-left-style: solid; border-width:3px;border-color:#019944;padding-left:5px"><strong>SNP位点筛选</strong></p>
+  <p>通过相关分型聚类指标、SNP call rate、最小等位基因频率（MAF）、Hardy-Weinberg 平衡（HWE）检验、非孟德尔遗传错误等指标对SNP进行筛选。</p>
+  <hr style="margin-top:0px;margin-bottom:8px">
+
+  <p  class="text-info" style="font-family:微软雅黑;font-size:115%;border-left-style: solid; border-width:3px;border-color:#019944;padding-left:5px"><strong>单位点关联分析</strong></p>
+  <p>针对表型或定量性状，采用Allelic、Genotypic、Dominant、Recessive等多种遗传模型进行关联检验 。</p>
+  <hr style="margin-top:0px;margin-bottom:8px">
+
+  <p  class="text-info" style="font-family:微软雅黑;font-size:115%;border-left-style: solid; border-width:3px;border-color:#019944;padding-left:5px"><strong>连锁不平衡分析</strong></p>
+  <p>连锁不平衡（linkage disequilibrium）是指基因组中不同基因座间存在的非随机关联，即不同基因座的非等位基因间的非随机组合。LD Plot表示该基因所有SNP的的连锁情况。</p>
+  <hr style="margin-top:0px;margin-bottom:8px">
+
+  <p  class="text-info" style="font-family:微软雅黑;font-size:115%;border-left-style: solid; border-width:3px;border-color:#019944;padding-left:5px"><strong>单体型关联分析</strong></p>
+  <p>单体型(Haplotype) 是位于一条染色体特定区域的一组相互关联、并倾向于以整体遗传给后代的单核苷酸多态的组合，又称单倍体型。基于单体型的疾病关联分析比单个SNP位点更有效率。</p>
+  <hr style="margin-top:0px;margin-bottom:8px">
+  <img src="/img/application_solution/bioinformatics_basic/structure/image2.png" style="width:700px;align:left;">
+
+  <p  class="text-info" style="font-family:微软雅黑;font-size:115%;border-left-style: solid; border-width:3px;border-color:#019944;padding-left:5px"><strong>aCGH芯片分析</strong></p>
+  <p>比较基因组杂交（aCGH）通过在一张芯片上用标记不同荧光素的样品（肿瘤样品和对照样品）进行杂交，检测样本基因组和对照基因组间DNA拷贝数变化（CNV）。常用卡方检验或Fisher精确检验鉴定Copy Number Status(Gain, Loss,Normal)。</p>
+  <hr style="margin-top:0px;margin-bottom:8px">
+
+  <p  class="text-info" style="font-family:微软雅黑;font-size:115%;border-left-style: solid; border-width:3px;border-color:#019944;padding-left:5px"><strong>CNV疾病易感性关联分析</strong></p>
+  <p>通过DGV、dbVAR等数据库检测CNV的多态性，并利用OMIM、DECIPHER等疾病-基因关联数据库，预测CNV的疾病易感性。</p>
+  <hr style="margin-top:0px;margin-bottom:8px">
+</div>

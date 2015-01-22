@@ -1,0 +1,83 @@
+
+<head>
+
+  <script type="text/javascript" src="http://api.map.baidu.com/api?v=1.5&ak=2b866a6daac9014292432d81fe9b47e3"></script>  
+  <script src="http://d1.lashouimg.com/static/js/release/jquery-1.4.2.min.js" type="text/javascript"></script>  
+
+</head>
+
+<body>
+
+  <div class="container marketing">
+
+    <h4 align="left" class="lead text-info" style="font-family:微软雅黑;margin-top:-20px;margin-left:-5px"  ><strong>联系我们</strong></h4>
+    <div class="row" style="margin-top:20px">
+      
+      <div class="row" style="margin-top:10px">
+        <div class="col-lg-7">
+          <p style="text-indent:1em;line-height:30px"><font style="font-family:微软雅黑;font-size:18px;color:#aacd06"><b>思博奥科生物信息科技(北京)有限公司</b></font></p>
+          <p style="text-indent:1em;line-height:30px"><b>地 址</b>：北京市中关村科技园(丰台园)航丰路8号1808室 100070</p>
+          <p style="text-indent:1em;line-height:30px"><b>电 话</b>：&#x030;&#00049;&#00048;&#00045;&#054;&#0000056;&#x031;&#0056;&#0053;&#000049;&#000052;&#054;</p>
+          <p style="text-indent:1em;line-height:30px"><b>传 真</b>：&#x030;&#00049;&#00048;&#00045;&#054;&#0000056;&#x031;&#0056;&#0053;&#000049;&#000052;&#054;</p>
+          <p style="text-indent:1em;line-height:30px"><b>邮 箱</b>：&#00000109;&#00097;&#00000114;&#0000107;&#00000101;&#x000074;&#x000040;&#00115;&#0121;&#00115;&#00098;&#105;&#0000111;&#00000109;&#000105;&#0000099;&#00115;&#046;&#x000063;&#111;&#00000109;</p>
+          <p style="text-indent:1em;line-height:30px"><b>网 址</b>：www.sysbiomics.com</p>
+        </div>
+
+        <div class="col-lg-5 pull-left">
+          <img src="/img/about_us/contact_us/15cm.jpg" style="width:150px;align:left;margin-top:90px"></a>
+        </div>
+
+      </div> 
+
+      <div class="row" style="margin-top:10px">
+        <div class="col-lg-10 pull-left">
+          <div style="width:620px;height:400px;border:1px solid gray;margin-left:15px" id="container"></div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+</body>
+
+<script type="text/javascript">  
+    var map = new BMap.Map("container");  
+    map.centerAndZoom(new BMap.Point(116.28682017619,39.83530625709), 13);  
+    map.enableScrollWheelZoom();  
+    var marker=new BMap.Marker(new BMap.Point(116.28682017619,39.83530625709));  
+    map.addOverlay(marker);  
+    var licontent="<b>思博奥科生物信息科技(北京)有限公司</b><br>";  
+        licontent+="<span><strong>地址：</strong>中关村科技园(丰台园)航丰路8号1808室</span><br>";  
+        licontent+="<span><strong>电话：</strong>(010)68185146</span><br>";  
+        // licontent+="<span class=\"input\"><strong></strong><input class=\"outset\" type=\"text\" name=\"origin\" value=\"北京站\"/><input class=\"outset-but\" type=\"button\" value=\"公交\" onclick=\"gotobaidu(1)\" /><input class=\"outset-but\" type=\"button\" value=\"驾车\"  onclick=\"gotobaidu(2)\"/><a class=\"gotob\" href=\"url=\"http://api.map.baidu.com/direction?destination=latlng:"+marker.getPosition().lat+","+marker.getPosition().lng+"|name:中关村科技园(丰台园)航丰路8号1808室"+"?ion=北京"+"&output=html\" target=\"_blank\"></a></span>";
+ 
+    var hiddeninput="<input type=\"hidden\" value=\""+'北京'+"\" name=\"region\" /><input type=\"hidden\" value=\"html\" name=\"output\" /><input type=\"hidden\" value=\"driving\" name=\"mode\" /><input type=\"hidden\" value=\"latlng:"+marker.getPosition().lat+","+marker.getPosition().lng+"|name:中关村科技园(丰台园)航丰路8号1808室"+"\" name=\"destination\" />";
+ 
+    var content1 ="<form id=\"gotobaiduform\" action=\"http://api.map.baidu.com/direction\" target=\"_blank\" method=\"get\">" + licontent +hiddeninput+"</form>";
+   
+    var opts1 = { width: 300 };  
+       
+    var  infoWindow = new BMap.InfoWindow(content1, opts1);  
+    marker.openInfoWindow(infoWindow);  
+    marker.addEventListener('click',function(){
+        marker.openInfoWindow(infoWindow);
+    });  
+     
+    function gotobaidu(type)  
+    {  
+        if($.trim($("input[name=origin]").val())=="")  
+        {  
+            alert("请输入起点！");  
+            return;  
+        }else{  
+            if(type==1)  
+            {  
+                $("input[name=mode]").val("transit");  
+                $("#gotobaiduform")[0].submit();  
+            }else if(type==2)  
+            {      
+                $("input[name=mode]").val("driving");          
+                $("#gotobaiduform")[0].submit();  
+            }  
+        }  
+    }    
+</script>

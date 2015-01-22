@@ -1,0 +1,411 @@
+  <!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="思博奥科生物信息科技（北京）有限公司">
+    <meta name="author" content="思博奥科生物信息科技（北京）有限公司">
+    <meta name="keywords" content="生物信息，测序，芯片，基因组学，转录组学，蛋白质组学，表观遗传学，生物网络，数据分析">
+    <link rel="shortcut icon" href="/img/favicon.png">
+    <title>Sysbiomics-思博奥科</title>
+
+    <link href="/lib/bootstrap/dist/css/bootstrap.css" rel="stylesheet">
+    <link href="/lib/bootstrap/examples/carousel/carousel.css" rel="stylesheet">
+    <link href="/lib/bootstrap/assets/css/docs.css" rel="stylesheet">
+
+    <!-- HTML5 shim, for IE6-8 support of HTML5 elements -->
+    <!--[if lt IE 9]>
+      <script src="../assets/js/html5shiv.js"></script>
+    <![endif]-->
+    <meta name="google-site-verification" content="9jDlRCB9aV08AAExWkYG_hUl32mKjyCZB1M_9uO7ovM" />
+    
+    <style type="text/css">
+      /* Custom container */
+      .allweb {
+        margin: 0 auto;
+        max-width: 1070px;
+      }
+
+      body 
+      {
+       font-family:"Arial","微软雅黑"
+      }
+      
+      </style>
+    
+   <SCRIPT language=javascript type=text/javascript> 
+    document.oncontextmenu=new Function('event.returnValue=false;'); 
+    document.onselectstart=new Function('event.returnValue=false;'); 
+   </SCRIPT>
+
+    <script type="text/javascript">
+
+      var _gaq = _gaq || [];
+      _gaq.push(['_setAccount', 'UA-4030556-29']);
+      _gaq.push(['_trackPageview']);
+
+      (function() {
+          var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+          ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+          var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+          })();
+
+      </script>
+      <!-- [if lt 8]>
+      <%= stylesheet_link_tag "/lib/assets/css/ie6.min.css" %>
+      https://github.com/empowering-communities/Bootstrap-IE6/blob/master/ie6.min.js
+
+      <%= javascript_script_tag "/lib/assets/js/ie6.min.js" %>
+      <![endif]-->
+
+      <!-- [if lt IE 9]>
+      <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+      <![endif]-->
+    </head>
+
+<style>
+
+
+
+.nav-pills > li > a > .badge {
+  margin-left: 3px;
+}
+
+
+.nav-pills > li {
+  float: left;
+}
+
+.nav-pills > li > a {
+  border-radius: 5px;
+}
+
+.nav-pills > li + li {
+  margin-left: 2px;
+}
+
+.nav-pills > li.active > a,
+.nav-pills > li.active > a:hover,
+.nav-pills > li.active > a:focus {
+  color: #ffffff;
+  background-color: #7CCD7C;
+}
+
+.nav-stacked > li {
+  float: none;
+}
+
+.nav-stacked > li + li {
+  margin-top: 2px;
+  margin-left: 0;
+}
+
+
+
+#m1f{
+  font-size: 14px;
+}
+
+.text-info a {color:#019944;}
+.text-info a:hover { color:#00a3bf;}
+
+.warp_Submenu.long { border-right:solid 0px #e4e4e4; border-left:solid 0px #e4e4e4; padding:0px 1px; background: url(/img/left_nav/img05.png) no-repeat top;}
+.warp_Submenu.middle { border-right:solid 0px #e4e4e4; border-left:solid 0px #e4e4e4; padding:0px 1px; background: url(/img/left_nav/img06.png) no-repeat top;}
+.warp_Submenu.short { border-right:solid 0px #e4e4e4; border-left:solid 0px #e4e4e4; padding:0px 1px; background: url(/img/left_nav/img07.png) no-repeat top;}
+.warp_Submenu h2{ font-weight:bold; padding-top:10px; border-bottom:solid 1px #e0e0e0; margin:0px 15px; line-height:26px;}
+.warp_Submenu h3{ height:41px; padding-left:20px;padding-top:6px;}
+.warp_Submenu ul{ padding:10px 15px 10px 19px;list-style-type:none;}
+.warp_Submenu ul li{ border-bottom:solid 1px #e0e0e0; line-height:30px; margin-left:15px}
+.warp_Submenu ul li a{ background: url(/img/left_nav/img01.png) no-repeat left center; color:#666; padding-left:10px;}
+.warp_Submenu ul li.head a { background: url(/img/left_nav/img00.png) no-repeat left center; color:#666; padding-left:17px;}
+.warp_Submenu ul li.head a:hover { background: url(/img/left_nav/img00.png) no-repeat left center; color:#019944; font-weight:bold;}
+.warp_Submenu ul li a:hover,.warp_Submenu ul li .acur{ background: url() no-repeat left center; color:#019944; font-weight:bold;}
+
+#ul1 li a,#ul2 li a,#ul3 li a,#ul4 li a,#ul5 li a,#ul6 li a,#ul7 li a{ background: url(/img/left_nav/img01.png) no-repeat left center; color:#666;margin :-15px;}
+#ul1 li.head a,#ul2 li.head a,#ul3 li.head a,#ul4 li.head a,#ul5 li.head a,#ul6 li.head a,#ul7 li.head a { background: url() no-repeat left center; color:#666; padding-left:17px;}
+#ul1 li a:hover,#ul2 li a:hover,#ul3 li a:hover,#ul4 li a:hover,#ul5 li a:hover,#ul6 li a:hover,#ul7 li a:hover,#ul1 li .acur,#ul2 li .acur,#ul3 li .acur,#ul4 li .acur,#ul5 li .acur,#ul6 li .acur,#ul7 li .acur{ background: url(/img/left_nav/img01.png) no-repeat left center; color:#019944; font-weight:bold;}
+
+.warp_Submenu ul li ul{ padding:0px 0px 10px 18px;}
+.warp_Submenu ul li ul li{ border-bottom:none; line-height:24px;}
+.warp_Submenu ul li ul li a{ color:#666; padding-left:0px; background:none;}
+.warp_Submenu ul li ul li a:hover,.warp_Submenu ul li ul li .acur{ color:#019944; font-weight:normal; background:none;}
+.warp_Submenu ul li ul li ul{ padding:0px 0px 0px 13px;}
+.warp_Submenu ul li ul li ul li{ border-bottom:none; line-height:22px;}
+.warp_Submenu ul li ul li ul li a{ color:#aeaeae; padding-left:0px; background:none;}
+.warp_Submenu ul li ul li ul li a:hover,.warp_Submenu ul li ul li ul li .acur{ color:#33b5cc; font-weight:normal; background:none;}
+</style>
+
+
+<body >
+
+<div class="allweb">
+        
+  <%= erb :title_second %>
+  <% @url = @path.split("/")[2]%>
+  <% if @url == "bioinformatics_integrate" %>
+    <img src="/img/technology_service/integrate.jpg" style="width:1070px">
+  <% else %>
+    <img src="/img/technology_service/<%= @url %>/first/<%= @url %>.jpg" style="width:1070px">
+  <% end %>
+          
+  <ul class="breadcrumb" style="background:white;margin:0px;width;1070px;padding-left:0px">
+    <li>当前位置：</li>
+    <li>
+    <a href="/">主页</a>
+    </li>
+    <% current_path.each do |url, label| %>
+        <li><span class="divider"></span> <a href="<%= url %>"><%= label %></a> </li>
+    <% end %>
+  </ul> 
+          
+
+  <div class="row" style="margin-top:5x">
+
+    <div class="col-lg-3 mysidebar">
+
+      <div class="warp_Submenu long">
+        <ul>
+          <li style="border-bottom:0px;margin-left:0px;" class="head" ><big><b>
+            <a href="#" onclick="show('ul1')">整合分析</a></b></big>
+            <% if @url == "bioinformatics_integrate" %>
+              <ul class="itemmenu" id="ul1" style="display:block;">
+            <% else %>
+              <ul class="itemmenu" id="ul1" style="display:none;">
+            <% end %>
+                <li><a href="/technology_service/bioinformatics_integrate/microRNA_mRNA" style="line-height:25px">microRNA-mRNA</a></li>
+                <li><a href="/technology_service/bioinformatics_integrate/tf_microRNA_mRNA" style="line-height:25px">转录因子-microRNA-mRNA</a></li>
+                <li><a href="/technology_service/bioinformatics_integrate/microRNA_degr_tran" style="line-height:25px">microRNA-降解组-转录组</a></li>
+                <li><a href="/technology_service/bioinformatics_integrate/microRNA_tran_prot" style="line-height:25px">microRNA-转录组-蛋白质组</a></li>
+                <li><a href="/technology_service/bioinformatics_integrate/lncRNA_mRNA" style="line-height:25px">lncRNA-mRNA</a></li>
+                <li><a href="/technology_service/bioinformatics_integrate/meth_mRNA" style="line-height:25px">甲基化-基因表达</a></li>
+                <li><a href="/technology_service/bioinformatics_integrate/meth_microRNA_mRNA" style="line-height:25px">甲基化-microRNA-基因表达</a></li>
+                <li><a href="/technology_service/bioinformatics_integrate/tran_prot" style="line-height:25px">转录组-蛋白质组</a></li>
+                <li><a href="/technology_service/bioinformatics_integrate/prot_metab" style="line-height:25px">蛋白质组-代谢组</a></li>
+              </ul>
+          </li>
+        </ul>
+      </div>
+
+      <div class="warp_Submenu long">
+        <ul>
+          <li style="border-bottom:0px;margin-left:0px;" class="head" ><big><b>
+            <a href="#" onclick="show('ul2')">基因组</a></b></big>
+            <% if @url == "genomics" %>
+              <ul class="itemmenu" id="ul2" style="display:block;">
+            <% else %>
+              <ul class="itemmenu" id="ul2" style="display:none;">
+            <% end %>
+              <li><a href="/technology_service/genomics/genome_reseq" style="line-height:25px">基因组重测序</a></li>
+              <li><a href="/technology_service/genomics/novo_seq" style="line-height:25px">基因组de novo测序</a></li>
+              <li><a href="/technology_service/genomics/target_region_seqs" style="line-height:25px">目标区域捕获测序</a></li>
+              <li><a href="/technology_service/genomics/exome_seq" style="line-height:25px">外显子组测序</a></li>
+              <li><a href="/technology_service/genomics/aCGH" style="line-height:25px">aCGH芯片</a></li>
+              <li><a href="/technology_service/genomics/snp" style="line-height:25px">SNP芯片</a></li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+
+      <div class="warp_Submenu long">
+        <ul>
+          <li style="border-bottom:0px;margin-left:0px;" class="head" ><big><b>
+            <a href="#" onclick="show('ul3')">转录组</a></b></big>
+            <% if @url == "transcriptomics" %>
+              <ul class="itemmenu" id="ul3" style="display:block;">
+            <% else %>
+              <ul class="itemmenu" id="ul3" style="display:none;">
+            <% end %>
+              <li><a href="/technology_service/transcriptomics/rna_seq" style="line-height:25px">转录组测序</a></li>
+              <li><a href="/technology_service/transcriptomics/dge_seq" style="line-height:25px">数字基因表达谱测序</a></li>
+              <li><a href="/technology_service/transcriptomics/sRNA_seq" style="line-height:25px">sRNA测序</a></li>
+              <li><a href="/technology_service/transcriptomics/lncRNA_seq" style="line-height:25px">lncRNA测序</a></li>
+              <li><a href="/technology_service/transcriptomics/degradome_seq" style="line-height:25px">降解组测序</a></li>
+              <li><a href="/technology_service/transcriptomics/mRNA_chip" style="line-height:25px">基因表达芯片</a></li>
+              <li><a href="/technology_service/transcriptomics/microRNA_chip" style="line-height:25px">microRNA芯片</a></li>
+              <li><a href="/technology_service/transcriptomics/lncRNA_chip" style="line-height:25px">lncRNA芯片</a></li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+
+      <div class="warp_Submenu middle">
+        <ul>
+          <li style="border-bottom:0px;margin-left:0px;" class="head" ><big><b>
+            <a href="#" onclick="show('ul4')">蛋白质组</a></b></big>
+            <% if @url == "proteomics" %>
+              <ul class="itemmenu" id="ul4" style="display:block;">
+            <% else %>
+              <ul class="itemmenu" id="ul4" style="display:none;">
+            <% end %>
+              <li><a href="/technology_service/proteomics/iTRAQ" style="line-height:25px">iTRAQ蛋白质组</a></li>
+              <li><a href="/technology_service/proteomics/silac" style="line-height:25px">SILAC定量</a></li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+
+      <div class="warp_Submenu middle">
+        <ul>
+          <li style="border-bottom:0px;margin-left:0px;" class="head" ><big><b>
+            <a href="#" onclick="show('ul5')">代谢组</a></b></big>
+            <% if @url == "metabonomics" %>
+              <ul class="itemmenu" id="ul5" style="display:block;">
+            <% else %>
+              <ul class="itemmenu" id="ul5" style="display:none;">
+            <% end %>
+              <li><a href="/technology_service/metabonomics/nmr" style="line-height:25px">NMR</a></li>
+              <li><a href="/technology_service/metabonomics/lcms" style="line-height:25px">LC_MS</a></li>
+              <li><a href="/technology_service/metabonomics/gcms" style="line-height:25px">GC_MS</a></li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+
+      <div class="warp_Submenu long">
+        <ul>
+          <li style="border-bottom:0px;margin-left:0px;" class="head" ><big><b>
+            <a href="#" onclick="show('ul6')">表观遗传组</a></b></big>
+            <% if @url == "epigenetics" %>
+              <ul class="itemmenu" id="ul6" style="display:block;">
+            <% else %>
+              <ul class="itemmenu" id="ul6" style="display:none;">
+            <% end %>
+              <li><a href="/technology_service/epigenetics/bisulfite_seq" style="line-height:25px">全基因组Bisulfite测序</a></li>
+              <li><a href="/technology_service/epigenetics/rrbs" style="line-height:25px">简化甲基化测序</a></li>
+              <li><a href="/technology_service/epigenetics/me_dip_seq" style="line-height:25px">Me_DIP测序</a></li>
+              <li><a href="/technology_service/epigenetics/chip_seq" style="line-height:25px">ChIP_Seq</a></li>
+              <li><a href="/technology_service/epigenetics/methyl_chip" style="line-height:25px">甲基化芯片</a></li>
+              <li><a href="/technology_service/epigenetics/chip_chip" style="line-height:25px">ChIP_chip</a></li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+
+      <div class="warp_Submenu middle">
+        <ul>
+          <li style="border-bottom:0px;margin-left:0px;" class="head" ><big><b>
+            <a href="#" onclick="show('ul7')">宏基因组</a></b></big>
+            <% if @url == "microbiomics" %>
+              <ul class="itemmenu" id="ul7" style="display:block;">
+            <% else %>
+              <ul class="itemmenu" id="ul7" style="display:none;">
+            <% end %>
+              <li><a href="/technology_service/microbiomics/macro_genome_seq" style="line-height:25px">宏基因组测序</a></li>
+              <li><a href="/technology_service/microbiomics/microbial_reseq" style="line-height:25px">微生物基因组重测序</a></li>
+              <li><a href="/technology_service/microbiomics/rDNA" style="line-height:25px">16SrDNA测序</a></li>
+              <li><a href="/technology_service/microbiomics/microbial_tran" style="line-height:25px">微生物转录组</a></li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+
+      <div class="warp_Submenu long">
+        <ul>
+          <li style="border-bottom:0px;margin-left:0px;" class="head" ><big><b><a href="/technology_service/experimental_service" style="line-height:25px">常规实验</a></b></big> 
+          </li> 
+
+        </ul>
+      </div>
+
+    </div>
+
+    <div class="col-lg-9 pull-right">
+
+      <%= yield %>
+    
+    </div>
+    
+  </div>
+
+</div>
+
+
+<%= erb :footer %>
+      
+    <script src="/lib/bootstrap/assets/js/jquery.js"></script>
+    <script src="/lib/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script src="/lib/bootstrap/assets/js/holder.js"></script>
+    <script src="/lib/bootstrap/assets/js/bootstrap-hover-dropdown.min.js"></script>
+    </body>
+</html>   
+      
+<script language="javascript" type="text/javascript">
+function $(obj){
+  return document.getElementById(obj);
+}
+
+//初始化左边菜单
+// function setCookie(sName,sValue,expireHours) {
+//   var cookieString = sName + "=" + escape(sValue);
+//   //;判断是否设置过期时间
+//   if (expireHours>0) {
+//      var date = new Date();
+//      date.setTime(date.getTime + expireHours * 3600 * 1000);
+//      cookieString = cookieString + "; expire=" + date.toGMTString();
+//   }
+//   document.cookie = cookieString;
+// }
+
+//--- 获取cookie
+// function getCookie(sName) {
+//   var aCookie = document.cookie.split("; ");
+//   for (var j=0; j < aCookie.length; j++){
+//   var aCrumb = aCookie[j].split("=");
+//   if (escape(sName) == aCrumb[0])
+//     return unescape(aCrumb[1]);
+//   }
+//   return null;
+// }
+
+// document.getElementsByClassName = function(cl) {
+//   var retnode = [];
+//   var myclass = new RegExp('\\b'+cl+'\\b');
+//   var elem = this.getElementsByTagName('*');
+//   for (var j = 0; j < elem.length; j++) {
+//     var classes = elem[j].className;
+//     if (myclass.test(classes)) retnode.push(elem[j]);
+//   }
+//   return retnode;
+// }
+
+function show(obj){
+  if($(obj).style.display == "none"){
+    $(obj).style.display = "block";
+  }else{
+    $(obj).style.display = "none";
+  }
+  // setAllItemCookie();
+}
+
+// function setAllItemCookie(){
+//   //遍历菜单入库操作
+//   var strCookieMenu = "";
+//   var items = document.getElementsByClassName("itemmenu");
+//   for(var i = 0;i<items.length;i++){
+//     if(items[i].style.display=="block"){
+//       strCookieMenu += items[i].id + ",";
+//     }
+//   }
+//   setCookie("product-menu",strCookieMenu,1);
+// }
+
+// 开启记忆功能
+// window.onload = function(){
+//   //初始化菜单
+//   try
+//   {
+//     var currMenu = getCookie("product-menu");
+//     var arrMenu = currMenu.split(",");
+//     for(var i = 0;i < arrMenu.length;i++){
+//       $(arrMenu[i]).style.display = "block";
+//     }
+//   }
+//   catch(e)
+//   {
+//   } 
+// }
+</script>
+
+
+</body>
+</html>

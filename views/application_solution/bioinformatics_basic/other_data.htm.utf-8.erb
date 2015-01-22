@@ -1,0 +1,60 @@
+<div class="bs-example bs-example-tabs">
+
+  <h3 style="font-family:微软雅黑; text-align:center">其他组学数据分析</h3>
+  <hr>
+
+  <h5 class="text-info" style="font-family:微软雅黑"><strong>甲基化芯片数据预处理</strong></h5>
+  <p>使用R语言统计软件的IMA(Illumina Methylation Analyzer）包，对Illumina 450K芯片原始数据进行标准化处理，将探针的信号值转换为甲基化位点的AVG_Beta值。</p>
+  <hr>
+
+  <h5 class="text-info" style="font-family:微软雅黑"><strong>差异甲基化分析</strong></h5>
+  <p>可采用Illumina的GenomeStudio软件、IMA、非参数检验等方法进行差异甲基化位点的筛选；对于两组重复样本实验常采用T-test结合AVG_Beta差值的方法。</p>
+
+  <hr>  
+
+
+  <h5 class="text-info" style="font-family:微软雅黑"><strong>基因功能元件分布统计</strong></h5>
+  <p>根据差异甲基化位点的基因组定位，统计其在基因功能元件1stExon、3'UTR、5'UTR、TSS200、TSS1500、和Body区域的分布，及启动子或非启动子区域、CGI或非CGI的分布。</p>
+  <img src="/img/application_solution/bioinformatics_basic/other_data/image1.png" style="width:700px;align:left;"> 
+  <hr>
+
+
+
+
+  <h5 class="text-info" style="font-family:微软雅黑"><strong>SNP位点筛选</strong></h5>
+  <p>通过相关分型聚类指标、SNP call rate、最小等位基因频率（MAF）、Hardy-Weinberg 平衡（HWE）检验、非孟德尔遗传错误等指标对SNP进行筛选。</p>
+  <hr>
+    
+  <h5 class="text-info" style="font-family:微软雅黑"><strong>连锁不平衡分析</strong></h5>
+  <p>连锁不平衡（linkage disequilibrium）是指基因组中不同基因座间存在的非随机关联，即不同基因座的非等位基因间的非随机组合。LD Plot表示该基因所有SNP的的连锁情况。</p>
+  <hr>
+
+  <h5 class="text-info" style="font-family:微软雅黑"><strong>单位点关联分析</strong></h5>
+  <p>针对表型或定量性状，采用Allelic、Genotypic、Dominant、Recessive等多种遗传模型进行关联检验 。</p>
+  <hr>
+
+  <h5 class="text-info" style="font-family:微软雅黑"><strong>单体型关联分析</strong></h5>
+  <p>单体型(Haplotype) 是位于一条染色体特定区域的一组相互关联、并倾向于以整体遗传给后代的单核苷酸多态的组合，又称单倍体型。基于单体型的疾病关联分析比单个SNP位点更有效率。</p>
+    <img src="/img/application_solution/bioinformatics_basic/other_data/image2.png" style="width:700px;align:left;">
+
+  <hr>
+    
+  <h5 class="text-info" style="font-family:微软雅黑"><strong>aCGH芯片分析</strong></h5>
+  <p>比较基因组杂交（aCGH）通过在一张芯片上用标记不同荧光素的样品（肿瘤样品和对照样品）进行杂交，检测样本基因组和对照基因组间DNA拷贝数变化（CNV）。常用卡方检验或Fisher精确检验鉴定Copy Number Status(Gain, Loss,Normal)。</p>
+  <hr>
+
+  <h5 class="text-info" style="font-family:微软雅黑"><strong>CNV疾病易感性关联分析</strong></h5>
+  <p>通过DGV、dbVAR等数据库检测CNV的多态性，并利用OMIM、DECIPHER等疾病-基因关联数据库，预测CNV的疾病易感性。</p>
+  <hr>
+
+  <h5 class="text-info" style="font-family:微软雅黑"><strong>蛋白质组质谱鉴定</strong></h5>
+  <p>基于NCBInr和SwissProt/UniProt的数据建立蛋白数据库， 采用Mascot2.4软件对iTRAQ蛋白质实验、或LC-MS实验得到的质谱数据进行蛋白质的识别和鉴定。</p>
+  <hr>
+
+  <h5 class="text-info" style="font-family:微软雅黑"><strong>代谢组鉴定</strong></h5>
+  <p>常用的代谢物鉴定数据库有MMCD(Madison Metabolomics Consortium Database)、METLIN Metabolomics Database和HMDB(the Human Metabolome Database)。以Accuracy 30ppm正离子模式(M+H)和负离子模式(M-H)为筛选条件，基于质谱数据处理后的mz值，进行代谢物的鉴定。</p>
+  <img src="/img/application_solution/bioinformatics_basic/other_data/image3.png" style="width:700px;align:left;">
+  <hr>
+
+  
+</div>

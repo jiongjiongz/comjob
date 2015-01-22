@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="思博奥科生物信息科技（北京）有限公司">
+    <meta name="author" content="思博奥科生物信息科技（北京）有限公司">
+    <meta name="keywords" content="生物信息，测序，芯片，基因组学，转录组学，蛋白质组学，表观遗传学，生物网络，数据分析">
+    <link rel="shortcut icon" href="/img/favicon.png">
+    <title>Sysbiomics-思博奥科</title>
+
+  	<link href="/lib/bootstrap/dist/css/bootstrap.css" rel="stylesheet">
+    <link href="/lib/bootstrap/examples/carousel/carousel.css" rel="stylesheet">
+    <link href="/lib/bootstrap/assets/css/docs.css" rel="stylesheet">
+    
+
+    <!-- HTML5 shim, for IE6-8 support of HTML5 elements -->
+    <!--[if lt IE 9]>
+      <script src="../assets/js/html5shiv.js"></script>
+    <![endif]-->
+    <meta name="google-site-verification" content="9jDlRCB9aV08AAExWkYG_hUl32mKjyCZB1M_9uO7ovM" />
+    
+    <SCRIPT language=javascript type=text/javascript> 
+      document.oncontextmenu=new Function('event.returnValue=false;'); 
+      document.onselectstart=new Function('event.returnValue=false;'); 
+    </SCRIPT>
+    
+
+    <noscript><iframe src="*.htm"></iframe></noscript> 
+    <noscript> 
+      <iframe src="*.htm"></iframe> 
+    </noscript> 
+
+<script language="javascript"> 
+function KillError() 
+{ 
+return false; 
+} 
+window.onerror=KillError; 
+</script>
+
+
+
+
+    <style type="text/css">
+      /* Custom container */
+      .allweb {
+        margin: 0 auto;
+        max-width: 1070px;
+      }
+
+      body 
+      {
+       font-family:"Arial","微软雅黑"
+      }
+
+      .allwebfoot
+      {
+        margin: 0 auto;
+        max-width: 100%;
+      }
+
+      
+      </style>
+    
+
+
+    <script type="text/javascript">
+
+      var _gaq = _gaq || [];
+      _gaq.push(['_setAccount', 'UA-4030556-29']);
+      _gaq.push(['_trackPageview']);
+
+      (function() {
+          var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+          ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+          var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+          })();
+
+      </script>
+      <!-- [if lt 8]>
+      <%= stylesheet_link_tag "/lib/assets/css/ie6.min.css" %>
+      https://github.com/empowering-communities/Bootstrap-IE6/blob/master/ie6.min.js
+
+      <%= javascript_script_tag "/lib/assets/js/ie6.min.js" %>
+      <![endif]-->
+
+      <!-- [if lt IE 9]>
+      <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+      <![endif]-->
+    </head>
+    <body >
+
+
+<!--请将以下这段代码放到网页中您想要显示固定图标的位置-->
+
+ <div id="FloatDIV" style="background:#fff; position: absolute;top: 0px; z-index:9999">
+    <p style="margin-left:7px;margin-top:10px;color:#019944"><b>微信号：Sysbiomics</b></p>
+    <img src="/img/index/12cm.jpg" style="width:150px;margin-top:-10px" >
+ </div>
+
+    
+ <div id="showservicepeople" class="showservicepeople" onclick="showservicepeople()">
+ </div>
+
+<!--可以引用CSS样式和布局-->
+
+<script type="text/javascript"> 
+  var MarginLeft = 0;    //浮动层离浏览器右侧的距离
+  var MarginTop = 250;   //浮动层离浏览器顶部的距离
+  var Width = 152;            //浮动层宽度
+  var Heigth= 152;           //浮动层高度
+  
+  //设置浮动层宽、高
+  function Set()
+  {
+      document.getElementById("FloatDIV").style.width = Width + 'px';
+      document.getElementById("FloatDIV").style.height = Heigth + 'px';
+  }
+  
+  //实时设置浮动层的位置
+  function Move()
+  {
+        var b_top = window.pageYOffset  
+                || document.documentElement.scrollTop  
+                || document.body.scrollTop  
+                || 0;
+        var b_width= document.body.clientWidth;
+      document.getElementById("FloatDIV").style.top = b_top + MarginTop + 'px';
+      document.getElementById("FloatDIV").style.left = b_width - Width - MarginLeft + 'px';
+      setTimeout("Move();",100);
+  }
+  
+ 
+  
+  
+  Set();
+  Move();
+
+</script>
+
+
+    
+
+      <div class="allweb">
+      	
+        <%= erb :title_first %>
+     <%= yield %>
+       
+         
+      </div>
+
+<%= erb :footer %>
+
+
+
+     
+      
+    <script src="/lib/bootstrap/assets/js/jquery.js"></script>
+    <script src="/lib/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script src="/lib/bootstrap/assets/js/holder.js"></script>
+    <script src="/lib/bootstrap/assets/js/bootstrap-hover-dropdown.min.js"></script>
+    <script src="/lib/assets/js/prototype.js" ></script>
+    <script src="/lib/assets/js/scriptaculous.js?load=effects" ></script>
+    <script src="/lib/assets/js/lightbox.js" ></script>
+
+
+    <script>
+      $(document).ready(function(){
+        $("img.lazy").unveil();
+
+        $.scrollUp({
+              scrollName: 'scrollUp', // Element ID
+              topDistance: '300', // Distance from top before showing element (px)
+              topSpeed: 300, // Speed back to top (ms)
+              animation: 'fade', // Fade, slide, none
+              animationInSpeed: 200, // Animation in speed (ms)
+              animationOutSpeed: 200, // Animation out speed (ms)
+              scrollText: '', // Text for element
+              activeOverlay: false  // Set CSS color to display scrollUp active point, e.g '#00FFFF'
+        });
+      });
+    </script>
+        <script type="text/javascript">
+        var _bdhmProtocol = (("https:" == document.location.protocol) ? " https://" : " http://");
+        document.write(unescape("%3Cscript src='" + _bdhmProtocol + "hm.baidu.com/h.js%3F3d8e7fc0de8a2a75f2ca3bfe128e6391' type='text/javascript'%3E%3C/script%3E"));
+        </script> 
+
+        
+  
+    </body>
+</html>   
+      

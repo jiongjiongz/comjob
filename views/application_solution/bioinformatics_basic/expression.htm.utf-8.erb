@@ -1,0 +1,53 @@
+<div class="bs-example bs-example-tabs">
+  <h3 style="font-family:微软雅黑; text-align:center"><strong>表达数据分析</strong></h3>
+  <hr style="margin-top:0px">
+
+  <p  class="text-info" style="font-family:微软雅黑;font-size:115%;border-left-style: solid; border-width:3px;border-color:#019944;padding-left:5px"><strong>数据预处理标准化</strong></p>
+  <p>一般包含低信号探针过滤、背景校正和归一化三个步骤。背景校正常采用subtraction方法，归一化一般采用quantile normalization和Robust Muti-array Analysis。Affymetrix芯片采用Affy工具包进行预处理分析；Agilent、LC Science、illumine、One array等芯片常采用limma工具包进行分析。</p>
+  <hr style="margin-top:0px;margin-bottom:8px">
+
+  <p  class="text-info" style="font-family:微软雅黑;font-size:115%;border-left-style: solid; border-width:3px;border-color:#019944;padding-left:5px"><strong>差异表达分析</strong></p>
+  <p>筛选差异表达基因（蛋白质或代谢物）是数据分析最关键的一步，基于此才可进行后续的功能分析和功能预测。并且不同的实验设计应选择不同的差异表达分析方法。</p>
+  <ul >
+    <li>单因素两组数据统计分析：t-test联合倍数差异</li>
+    <li>多组数据统计分析：one-way anova 和 two way anova</li>
+    <li>芯片数据常采用SAM分析、dChip和genefilter等</li>
+    <li>测序数据常采用cuffdiff、DEGseq、edgeR等</li>
+  </ul>
+  <img src="/img/application_solution/bioinformatics_basic/expression/image1.png" style="width:500px;align:left;"> 
+
+  <hr style="margin-top:0px;margin-bottom:8px">  
+
+
+  <p  class="text-info" style="font-family:微软雅黑;font-size:115%;border-left-style: solid; border-width:3px;border-color:#019944;padding-left:5px"><strong>时间序列芯片数据分析</strong></p>
+  <p>时间序列指同一样本在不同时间上取得的观察值按时间顺序排列，常应用于动植物生长发育、药效评估、及代谢研究等。不能简单地使用方差分析进行时序数据分析，因为不同时间点间的数据是不独立的，而是相互依赖的且存在一定的自相关性。常用的时序分析方法有：
+  <ul >
+    <li>one-way anova</li>
+    <li>Bayesian Estimation of Temporal Regulation(BETR)</li>
+    <li>Bayesian Analysis of Time Series(BATS)</li>
+    <li>要求三个或三个时间点以上的数据，并具有生物学重复。</li>
+  </ul>
+  <hr style="margin-top:0px;margin-bottom:8px">
+
+  <p  class="text-info" style="font-family:微软雅黑;font-size:115%;border-left-style: solid; border-width:3px;border-color:#019944;padding-left:5px"><strong>ID Convert</strong></p>
+  <p>支持Affymetrix、Agilent和Illumination探针ID，及NCBI Entrez Gene ID、Gene Symbol、GI Number、RefSeq ID、Unigene ID、 Esembl Gene ID、Esembl Protein ID、Ensemble Transcript ID、KEGG Gene ID、EC Number、Uniprot Accesscion 和IPI protein ID等不同数据库间生物大分子的标识符转换。</p>
+  <hr style="margin-top:0px;margin-bottom:8px">
+
+  <p  class="text-info" style="font-family:微软雅黑;font-size:115%;border-left-style: solid; border-width:3px;border-color:#019944;padding-left:5px"><strong>蛋白质组质谱鉴定</strong></p>
+  <p>基于NCBInr和SwissProt/UniProt的数据建立蛋白数据库， 采用Mascot2.4软件对iTRAQ蛋白质实验、或LC-MS实验得到的质谱数据进行蛋白质的识别和鉴定。</p>
+  <hr style="margin-top:0px;margin-bottom:8px">
+
+  <p  class="text-info" style="font-family:微软雅黑;font-size:115%;border-left-style: solid; border-width:3px;border-color:#019944;padding-left:5px"><strong>代谢组鉴定</strong></p>
+  <p>常用的代谢物鉴定数据库有MMCD(Madison Metabolomics Consortium Database)、METLIN Metabolomics Database和HMDB(the Human Metabolome Database)。以Accuracy 30ppm正离子模式(M+H)和负离子模式(M-H)为筛选条件，基于质谱数据处理后的mz值，进行代谢物的鉴定。</p>
+  <hr style="margin-top:0px;margin-bottom:8px">
+  <img src="/img/application_solution/bioinformatics_basic/expression/image3.png" style="width:700px;align:left;">
+    
+  <p  class="text-info" style="font-family:微软雅黑;font-size:115%;border-left-style: solid; border-width:3px;border-color:#019944;padding-left:5px"><strong>染色体分布作图</strong></p>
+  <p>针对差异表达的基因、蛋白质或差异甲基化区域，统计其在染色体上分布。</p>
+  <hr style="margin-top:0px;margin-bottom:8px">
+
+  <p  class="text-info" style="font-family:微软雅黑;font-size:115%;border-left-style: solid; border-width:3px;border-color:#019944;padding-left:5px"><strong>Circos作图</strong></p>
+  <p>采用Circos软件，可同时在基因组上展示基因表达、基因突变、DNA甲基化等数据，还可展示基因间的相互作用。</p>
+  <img src="/img/application_solution/bioinformatics_basic/expression/image2.png" style="width:500px;align:left;">
+  <hr style="margin-top:0px;margin-bottom:8px">
+</div>

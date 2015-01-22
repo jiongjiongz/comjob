@@ -1,0 +1,39 @@
+<div class="bs-example bs-example-tabs">
+  <h3 style="font-family:微软雅黑; text-align:center"><strong>分类聚类分析</strong></h3>
+  <hr style="margin-top:0px">
+
+  <p  class="text-info" style="font-family:微软雅黑;font-size:115%;border-left-style: solid; border-width:3px;border-color:#019944;padding-left:5px"><strong>样本相关性分析</strong></p>
+  <p>基于基因表达、蛋白质表达、代谢物表达或甲基化谱数据等，检测各个样品间的相关性，验证生物学重复之间的均一性。常用的样本相关性计算方法:</p>
+  <ul>
+    <li>Pearson correlation coefficient</li>
+    <li>Spearman correlation coefficient for ranked data</li>
+  </ul>
+  <hr style="margin-top:0px;margin-bottom:8px">
+
+  <p  class="text-info" style="font-family:微软雅黑;font-size:115%;border-left-style: solid; border-width:3px;border-color:#019944;padding-left:5px"><strong>主成分分析</strong></p>
+  <p>Principal Component Analysis的原理是将原来的矩阵数据经过投射，找到方差最大的两个或三个主成分，以达到数据降维的目的。通过图像上样本点之间的距离显示样品间的相似度，可验证试验设计的合理性及生物学重复样品的均一性。</p>
+  <hr style="margin-top:0px;margin-bottom:8px">
+
+  <p  class="text-info" style="font-family:微软雅黑;font-size:115%;border-left-style: solid; border-width:3px;border-color:#019944;padding-left:5px"><strong>表达趋势分析</strong></p>
+  <p>当包含多组基因表达数据或多个时间点时，采用方差分析的方法筛选差异表达基因，用折线图表示基因表达趋势分类。</p>
+  <hr style="margin-top:0px;margin-bottom:8px">
+  <img src="/img/application_solution/bioinformatics_basic/cluster/image1.png" style="width:700px;align:left;"> 
+  <hr style="margin-top:0px;margin-bottom:8px">
+
+  <p  class="text-info" style="font-family:微软雅黑;font-size:115%;border-left-style: solid; border-width:3px;border-color:#019944;padding-left:5px"><strong>SOM聚类</strong></p>
+  <p>Self-Organizing Mapping(SOM)自组织映射网络聚类分析差异表达基因，可以将基因表达的主流趋势科学、准确的筛选出来。</p>
+  <hr style="margin-top:0px;margin-bottom:8px">
+
+  <p  class="text-info" style="font-family:微软雅黑;font-size:115%;border-left-style: solid; border-width:3px;border-color:#019944;padding-left:5px"><strong>层次聚类</strong></p>
+  <p>为了全面直观的展示样品之间的关系及差异情况，一般筛选差异表达基因（差异基因数目需&lt3000）进行基因和样本双向层次聚类。同一类样品能通过聚类出现在同一簇中，聚在同一簇的共表达基因可能具有类似的生物功能。</p>
+  <hr style="margin-top:0px;margin-bottom:8px">
+
+  <p  class="text-info" style="font-family:微软雅黑;font-size:115%;border-left-style: solid; border-width:3px;border-color:#019944;padding-left:5px"><strong>构建分类预测模型</strong></p>
+  <p>整合临床指标（分类指标）数据，采用单因素或多因素分析筛选与分类密切相关的基因（蛋白质或代谢组）表达标志物，之后采用COX多元回归模型、线性判别分析（LDA）、支持向量机（SVM）、人工神经网络（ANN）或Ｋ紧邻等方法，构建样本分类模型，并对待测样本进行分类预测。</p>
+  <hr style="margin-top:0px;margin-bottom:8px">
+
+  <p  class="text-info" style="font-family:微软雅黑;font-size:115%;border-left-style: solid; border-width:3px;border-color:#019944;padding-left:5px"><strong>PLS-DA和OPLS-DA分析</strong></p>
+  <p>正交化偏最小二乘法-判别分析(OPLS-DA)是一类有监督的多因变量对多自变量的回归建模方法。PLS-DA 和OPLS-DA识别算法可发现一组代谢（或蛋白质）标志物，建立最优的判别模型，使其达到最好的样本分类的效果。</p>
+  <hr style="margin-top:0px;margin-bottom:8px">
+  <img src="/img/application_solution/bioinformatics_basic/cluster/image2.png" style="width:700px;align:left;"> 
+</div>

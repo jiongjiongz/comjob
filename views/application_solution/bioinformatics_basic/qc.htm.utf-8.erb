@@ -1,0 +1,34 @@
+<div class="bs-example bs-example-tabs">
+  <h3 style="font-family:微软雅黑; text-align:center"><strong>数据质量控制</strong></h3>
+  <hr style="margin-top:0px">
+
+  <p  class="text-info" style="font-family:微软雅黑;font-size:115%;border-left-style: solid; border-width:3px;border-color:#019944;padding-left:5px"><strong>序列质控</strong></p>
+  <p>采用SeqControl评估测序数据总体质量，主要包括参考基因组覆盖度、总体测序深度、reads总体分布、测序质量分布等。</p>
+  <hr style="margin-top:0px;margin-bottom:8px">
+
+  <p  class="text-info" style="font-family:微软雅黑;font-size:115%;border-left-style: solid; border-width:3px;border-color:#019944;padding-left:5px"><strong>序列过滤</strong></p>
+  <p>测序得到的原始测序序列，里面含有带接头的、低质量的reads，为了保证信息分析质量，必须对raw reads进行过滤，得到clean reads。</p>
+  <hr style="margin-top:0px;margin-bottom:8px">
+
+  <img src="/img/application_solution/bioinformatics_basic/qc/image1.png" style="width:650px;align:left;"> 
+  <hr style="margin-top:0px;margin-bottom:8px">
+
+  <p  class="text-info" style="font-family:微软雅黑;font-size:115%;border-left-style: solid; border-width:3px;border-color:#019944;padding-left:5px"><strong>reads平均得分统计</strong></p>
+  <p>采用FastQC 计算每个read的平均得分，然后统计reads质量分布。</p>
+  <hr style="margin-top:0px;margin-bottom:8px">
+
+  <p  class="text-info" style="font-family:微软雅黑;font-size:115%;border-left-style: solid; border-width:3px;border-color:#019944;padding-left:5px"><strong>基因检出率分析</strong></p>
+  <p>针对转录组测序数据，选定基因组模型，分析基因的检出率。</p>
+  <hr style="margin-top:0px;margin-bottom:8px">
+
+  <p  class="text-info" style="font-family:微软雅黑;font-size:115%;border-left-style: solid; border-width:3px;border-color:#019944;padding-left:5px"><strong>splice junctions检出率分析检出率分析</strong></p>
+  <p>RNA-Seq不饱和的测序深度将不能提供精确地基因表达RPKM评估，同时也无法检测到低丰度的splice junctions。</p>
+  <hr style="margin-top:0px;margin-bottom:8px">
+
+  <p  class="text-info" style="font-family:微软雅黑;font-size:115%;border-left-style: solid; border-width:3px;border-color:#019944;padding-left:5px"><strong>其他质控分析</strong></p>
+  <p>reads中GC含量分布，reads长度分布，reads中N（未识别）碱基分布，ATGC碱基分布，基因组/转录组测序覆盖度分析，测序深度统计分析等。</p>
+  <hr style="margin-top:0px;margin-bottom:8px">
+
+  <img src="/img/application_solution/bioinformatics_basic/qc/image2.png" style="width:650px;align:left;"> 
+  <hr style="margin-top:0px;margin-bottom:8px">
+</div>

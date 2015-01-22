@@ -1,0 +1,83 @@
+<div class="bs-example bs-example-tabs">
+
+  <h3 style="font-family:微软雅黑; text-align:center"><strong>GC-MS代谢组学检测分析</strong></h3>
+  <hr style="margin-top:0px">
+
+  <ul id="myTab" class="nav nav-tabs">
+    <li class="active"><a href="#服务简介" data-toggle="tab"><strong style="font-size:120%;">服务简介</strong></a></li>
+    <li><a href="#技术路线" data-toggle="tab"><strong style="font-size:120%;">技术路线</strong></a></li>
+    <li><a href="#分析方案" data-toggle="tab"><strong style="font-size:120%;">分析方案</strong></a></li>     
+  </ul>
+
+  <div id="myTabContent" class="tab-content">
+
+    <div class="tab-pane fade in active" id="服务简介">
+
+      <p  class="text-info" style="font-family:微软雅黑;font-size:115%;border-left-style: solid; border-width:3px;border-color:#019944;padding-left:5px"><strong>意义</strong></p>
+      <p style="text-indent:2em;font-family:微软雅黑;line-height:25px" class="text-muted">GC-MS(气相色谱-质谱联用技术)，以气相色谱作为分离系统，质谱为检测系统。使用运载气推动分析物通过涂渍的溶融石英毛细管，基于分析物在气相和毛细管内涂层之间的不同分配实现分离，再通过电子轰击方式分析得到代谢物成分谱，进而与标准谱库进行比对找到代谢化合物。可应用于疾病诊断与发病机制，药理毒理学，中医药现代化，农业与植物，微生物代谢与发酵等领域。</p>
+      <hr style="margin-top:0px;margin-bottom:8px">
+
+      <p  class="text-info" style="font-family:微软雅黑;font-size:115%;border-left-style: solid; border-width:3px;border-color:#019944;padding-left:5px;"><strong>优势</strong></p>
+      <ol >
+        <li><p class="text-muted">仪器及耗材</p></li>
+          <p class="text-muted">仪器：Agilent GC/MS</br>
+          色谱柱：HP-5ms毛细管色谱柱</br>
+          耗材：甲醇、乙腈、蒸馏水、甲氧胺、吡啶、BSTFA衍生试剂等
+        </p>
+
+        <li><p class="text-muted">样品前处理</p></li>
+          <p class="text-muted">准确称量样品，不同的样品处理的方法不尽相同，并对检测样品进行衍生化，取出样本，室温放置30min，进行GC/MS代谢组学分析。</p>
+
+        <li><p class="text-muted">仪器条件</p></li>
+          <p class="text-muted">仪器参数设定为：进样口温度280 ℃，EI离子源温度230 ℃，四极杆温度150 ℃，高纯氦气（纯度大于99.999%）作为载气，不分流进样，进样量1.0 μL。升温程序为：初始温度80 ℃，维持2 min，10 ℃/min的速度升至320 ℃，并维持6min。采用全扫描模式进行质谱检测，质谱检测范围为50-550 (m/z)，不同的样品检测条件略有不同。</p>
+      </ol>
+      <hr style="margin-top:0px;margin-bottom:8px">
+
+    </div><!--服务简介 -->
+
+    
+    <div class="tab-pane fade" id="技术路线">
+      <center><img src="/img/technology_service/metabonomics/gcms/image001.jpg" style="width:300px"></center>
+    </div>
+
+
+    <div class="tab-pane fade" id="分析方案">
+      <p  class="text-info" style="font-family:微软雅黑;font-size:115%;border-left-style: solid; border-width:3px;border-color:#019944;padding-left:5px;"><strong>基本分析</strong></p>
+      <ol >
+        <li><p class="text-muted">原始色谱图检查及可视化</p></li>
+          <p class="text-muted">对所有样本的总离子流色谱图(TIC)色谱图进行重叠，可以观察发现仪器保留时间的重现性，仪器的稳定性，所测得的物质数量。</p>
+
+        <li><p class="text-muted">PCA分析</p></li>
+          <p class="text-muted">对两组之间的样品进行主成分分析，观察组间样品的分离程度，用score plot展示PCA分析结果。</p>
+
+        <li><p class="text-muted">偏最小二乘法判别分析(PLS-DA)</p></li>
+          <p class="text-muted">为了判别对照组和实验组之间是否具有差异，我们采用 PLS-DA方法对样本进行建模分析。</p>
+
+        <li><p class="text-muted">正交偏最小二乘法判别分析(OPLS-DA)</p></li>
+          <p class="text-muted">在PLS-DA分析效果不很理想的情况下，我们可以进一步采用正交偏最小二乘方判别分析（OPLS-DA）过滤与模型分类不相关信号即正交信号，获得OPLS-DA模型。</p>
+
+        <li><p class="text-muted">差异代谢物筛选及鉴定</p></li>
+          <p class="text-muted">我们采用 OPLS-DA模型主成分的VIP(Variable Importance in the Projection)值，并结合t检验(t-test)的p值来寻找差异性表达代谢物。差异性代谢物的定性方法为：搜索自建的标准物质数据库和NIST商业数据库。最终得到差异代谢物信息。</p>
+
+      </ol>
+      <hr style="margin-top:0px;margin-bottom:8px">
+
+      <p  class="text-info" style="font-family:微软雅黑;font-size:115%;border-left-style: solid; border-width:3px;border-color:#019944;padding-left:5px;"><strong>深入分析</strong></p>
+      <ol >
+        <li><p class="text-muted">差异物质代谢通路归属</p></li>
+          <p class="text-muted">针对目标性差异物质列表进行通路归属，提供每个物质所参与的代谢通路名称及对应代谢通路图表的链接。根据上述分析结果的情况和差异物质的信息，筛选出对所关注的主要通路，并分别进行代谢通路构建。</p>
+
+        <li><p class="text-muted">代谢互作网络构建</p></li>
+          <p class="text-muted">根据得到的代谢通路，进行代谢互作网络的构建，用以充分理解生物内部的代谢调控机制。</p>
+
+        <li><p class="text-muted">多组学整合分析</p></li>
+          <p class="text-muted">通过分析代谢通路，与其他组学数据，如基因组学，转录组学以及蛋白质组学等的整合，为其他组学的研究结论提供佐证，实现研究对象的整体性分析及研究结论的系统化阐释，从而得到全面、可靠的研究成果。</p>
+
+      </ol>
+      <hr style="margin-top:0px;margin-bottom:8px">
+
+    </div>
+
+  </div><!--myTabContent -->
+
+</div><!--bs-example -->

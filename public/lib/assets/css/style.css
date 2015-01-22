@@ -1,0 +1,141 @@
+/* === UTILS ==={ */
+/* }=== UTILS === */
+/* === COLOR - AZURE ==={ */
+/* }=== COLOR - AZURE === */
+/* === MADMIN MENU ==={ */
+/* general setup & list styles reset */
+
+#topbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 30px;
+  padding: 0 3px;
+  border: 0;
+  margin: 0;
+  text-align: center;
+  z-index: 5000;
+}
+#topbar > li {
+  display: inline-block;
+  position: relative;
+}
+
+/* Top Bar */
+#topbar {
+  background: #3a4450;
+  color: #ffffff;
+}
+#topbar h1 {
+  position: relative;
+  height: 30px;
+  margin: 0;
+  top: -8px;
+  font-size: 14px;
+  font-weight: normal;
+}
+#topbar h1 [class^="icon-"] {
+  position: relative;
+  top: 4px;
+  margin-right: 5px;
+  font-size: 18px;
+  line-height: 18px;
+  color: #6ac8fb;
+}
+#topbar h1 [class^="icon-icomoon-"] {
+  top: 4px;
+}
+#topbar h1 a {
+  position: relative;
+  top: 3px;
+  color: #ffffff;
+}
+#topbar h1 a:hover {
+  text-decoration: none;
+}
+#topbar > li > a {
+  display: inline-block;
+  padding: 5px 10px 0 10px;
+  font-size: 11px;
+  font-weight: bold;
+  text-transform: uppercase;
+  color: #ffffff;
+  height: 24px;
+  line-height: 21px;
+}
+#topbar > li > a:hover {
+  text-decoration: none;
+  background: #4b5867;
+}
+#topbar > li.pull-right > a {
+  margin-left: 10px;
+}
+#topbar > li.parent > a > span:after {
+  content: "";
+  display: inline-block;
+  width: 0px;
+  height: 0px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: #ffffff #3a4450 #3a4450 #3a4450;
+  position: relative;
+  top: 1px;
+  position: relative;
+  top: 2px;
+  margin-left: 5px;
+}
+#topbar > li.parent > a:hover > span:after {
+  content: "";
+  display: inline-block;
+  width: 0px;
+  height: 0px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: #ffffff #4b5867 #4b5867 #4b5867;
+  position: relative;
+  top: 1px;
+  position: relative;
+  top: 2px;
+  margin-left: 5px;
+}
+#topbar .dropdown-menu {
+  top: 98%;
+  right: 0;
+  margin: 0;
+  padding: 0 0 0 0;
+  background: #3a4450;
+  border: 0;
+  -webkit-border-radius: 0;
+  -moz-border-radius: 0;
+  border-radius: 0;
+  box-shadow: none;
+  text-align: left;
+}
+#topbar .dropdown-menu * {
+  color: #ffffff;
+}
+#topbar .dropdown-menu > li > a {
+  height: 24px;
+}
+#topbar .dropdown-menu > li > a:hover {
+  background: #4b5867;
+}
+#topbar .dropdown-menu > li.divider {
+  background: none;
+  border-bottom-color: #4b5867;
+}
+/* Bootstrap drop-downs behavior enhancement */
+ul.on-hover > li.parent:hover > .dropdown-menu {
+  display: block;
+}
+.dropdown-menu {
+  background: #f7f7fd;
+  box-shadow: none;
+}
+.dropdown-menu li > a:hover,
+.dropdown-menu li > a:focus,
+.dropdown-submenu:hover > a {
+  color: #ffffff;
+  background: #61b0e9;
+}

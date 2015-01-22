@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="思博奥科生物信息科技（北京）有限公司">
+    <meta name="author" content="思博奥科生物信息科技（北京）有限公司">
+    <meta name="keywords" content="生物信息，测序，芯片，基因组学，转录组学，蛋白质组学，表观遗传学，生物网络，数据分析">
+    <link rel="shortcut icon" href="/img/favicon.png">
+    <title>Sysbiomics-思博奥科</title>
+
+    <link href="/lib/bootstrap/dist/css/bootstrap.css" rel="stylesheet">
+    <link href="/lib/bootstrap/examples/carousel/carousel.css" rel="stylesheet">
+    <link href="/lib/bootstrap/assets/css/docs.css" rel="stylesheet">
+
+    <!-- HTML5 shim, for IE6-8 support of HTML5 elements -->
+    <!--[if lt IE 9]>
+      <script src="../assets/js/html5shiv.js"></script>
+    <![endif]-->
+    <meta name="google-site-verification" content="9jDlRCB9aV08AAExWkYG_hUl32mKjyCZB1M_9uO7ovM" />
+    
+    <style type="text/css">
+      /* Custom container */
+      .allweb {
+        margin: 0 auto;
+        max-width: 1070px;
+      }
+      
+      body 
+      {
+       font-family:"Arial","微软雅黑"
+      }
+
+    </style>
+    <style>
+
+      .nav-pills > li > a > .badge {
+        margin-left: 3px;
+      }
+
+      .nav-pills > li {
+        float: left;
+      }
+
+      .nav-pills > li > a {
+        border-radius: 5px;
+      }
+
+      .nav-pills > li + li {
+        margin-left: 2px;
+      }
+
+      .nav-pills > li.active > a,
+      .nav-pills > li.active > a:hover,
+      .nav-pills > li.active > a:focus {
+        color: #ffffff;
+        background-color: #7CCD7C;
+      }
+
+      .nav-stacked > li {
+        float: none;
+      }
+
+      .nav-stacked > li + li {
+        margin-top: 2px;
+        margin-left: 0;
+      }
+
+      #m1f{
+        font-size: 14px;
+      }
+
+      .text-info a {color:#019944;}
+      .text-info a:hover { color:#00a3bf;}
+
+      .warp_Submenu.long { border-right:solid 0px #e4e4e4; border-left:solid 0px #e4e4e4; padding:0px 1px; background: url(/img/left_nav/img05.png) no-repeat top;}
+      .warp_Submenu.middle { border-right:solid 0px #e4e4e4; border-left:solid 0px #e4e4e4; padding:0px 1px; background: url(/img/left_nav/img06.png) no-repeat top;}
+      .warp_Submenu.short { border-right:solid 0px #e4e4e4; border-left:solid 0px #e4e4e4; padding:0px 1px; background: url(/img/left_nav/img07.png) no-repeat top;}
+      .warp_Submenu h2{ font-weight:bold; padding-top:10px; border-bottom:solid 1px #e0e0e0; margin:0px 15px; line-height:26px;}
+      .warp_Submenu h3{ height:41px; padding-left:20px;padding-top:6px;}
+      .warp_Submenu ul{ padding:10px 15px 10px 19px;list-style-type:none;}
+      .warp_Submenu ul li{ border-bottom:solid 1px #e0e0e0; line-height:30px; margin-left:15px}
+      .warp_Submenu ul li a{ background: url(/img/left_nav/img01.png) no-repeat left center; color:#666; padding-left:10px;}
+      .warp_Submenu ul li.head a { background: url(/img/left_nav/img00.png) no-repeat left center; color:#666; padding-left:17px;}
+      .warp_Submenu ul li.head a:hover { background: url(/img/left_nav/img00.png) no-repeat left center; color:#019944; font-weight:bold;}
+      .warp_Submenu ul li a:hover,.warp_Submenu ul li .acur{ background: url(/img/left_nav/img01.png) no-repeat left center; color:#019944; font-weight:bold;}
+
+      .warp_Submenu ul li ul{ padding:0px 0px 10px 18px;}
+      .warp_Submenu ul li ul li{ border-bottom:none; line-height:24px;}
+      .warp_Submenu ul li ul li a{ color:#666; padding-left:0px; background:none;}
+      .warp_Submenu ul li ul li a:hover,.warp_Submenu ul li ul li .acur{ color:#019944; font-weight:normal; background:none;}
+      .warp_Submenu ul li ul li ul{ padding:0px 0px 0px 13px;}
+      .warp_Submenu ul li ul li ul li{ border-bottom:none; line-height:22px;}
+      .warp_Submenu ul li ul li ul li a{ color:#aeaeae; padding-left:0px; background:none;}
+      .warp_Submenu ul li ul li ul li a:hover,.warp_Submenu ul li ul li ul li .acur{ color:#33b5cc; font-weight:normal; background:none;}
+    </style>
+    
+    <SCRIPT language=javascript type=text/javascript> 
+      document.oncontextmenu=new Function('event.returnValue=false;'); 
+      document.onselectstart=new Function('event.returnValue=false;'); 
+    </SCRIPT>
+
+    <script type="text/javascript">
+
+      var _gaq = _gaq || [];
+      _gaq.push(['_setAccount', 'UA-4030556-29']);
+      _gaq.push(['_trackPageview']);
+
+      (function() {
+          var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+          ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+          var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+          })();
+
+    </script>
+  </head>
+
+  <body >
+
+    <div class="allweb">
+      
+      <%= erb :title_second %>
+      <% if @path == "/technology_service" %>
+        <img src="/img/technology_service/first/technology.jpg" style="width:1070px">
+      <% elsif @path == "/technology_service/bioinformatics_integrate" %>
+        <img src="/img/technology_service/integrate.jpg" style="width:1070px">
+      <% elsif @path == "/technology_service/genomics" %>
+        <img src="/img/technology_service/genomics/first/genomics.jpg" style="width:1070px">
+      <% elsif @path == "/technology_service/transcriptomics" %>
+        <img src="/img/technology_service/transcriptomics/first/transcriptomics.jpg" style="width:1070px">
+      <% elsif @path == "/technology_service/proteomics" %>
+        <img src="/img/technology_service/proteomics/first/proteomics.jpg" style="width:1070px">
+      <% elsif @path == "/technology_service/metabonomics" %>
+        <img src="/img/technology_service/metabonomics/first/metabonomics.jpg" style="width:1070px">
+      <% elsif @path == "/technology_service/epigenetics" %>
+        <img src="/img/technology_service/epigenetics/first/epigenetics.jpg" style="width:1070px">
+      <% elsif @path == "/technology_service/microbiomics" %>
+        <img src="/img/technology_service/microbiomics/first/microbiomics.jpg" style="width:1070px">
+      <% else %>
+        <img src="/img/technology_service/experimental.jpg" style="width:1070px">
+      <% end %>
+
+      <ul class="breadcrumb" style="background:white;margin:0px;width;1070px;padding-left:0px">
+        <li>当前位置：</li>
+        <li>
+        <a href="/">主页</a>
+        </li>
+        <% current_path.each do |url, label| %>
+            <li><span class="divider"></span> <a href="<%= url %>"><%= label %></a> </li>
+        <% end %>
+      </ul> 
+           
+      <div class="row" style="margin-top:5px">
+    　　
+        <div class="col-lg-3 mysidebar">
+
+          <div class="warp_Submenu long">
+            <ul>
+              <li style="border-bottom:0px;margin-left:0px;" class="head" ><big><b><a href="/technology_service">技术服务</a></b></big></li>
+              <li><a href="/technology_service/bioinformatics_integrate" style="line-height:25px">多维组学整合分析</a></li>                 
+              <li><a href="/technology_service/genomics" style="line-height:25px">基因组</a></li>
+              <li><a href="/technology_service/transcriptomics" style="line-height:25px">转录组</a></li>
+              <li><a href="/technology_service/proteomics" style="line-height:25px">蛋白质组</a></li>
+              <li><a href="/technology_service/metabonomics" style="line-height:25px">代谢组</a></li>
+              <li><a href="/technology_service/epigenetics" style="line-height:25px">表观遗传组</a></li>   
+              <li><a href="/technology_service/microbiomics" style="line-height:25px">宏基因组</a></li>                  
+              <li><a href="/technology_service/experimental_service" style="line-height:25px">常规实验</a></li>
+            </ul>
+          </div>
+          <div class="warp_Submenu middle">
+            <ul>
+              <li style="border-bottom:0px;margin-left:0px;" class="head" ><big><b><a href="/application_solution">应用方案</a></b></big></li>
+              <li><a href="/application_solution/bioinformatics_basic" style="line-height:25px">生物信息定制分析</a></li>
+              <li><a href="/application_solution/medica_statistics" style="line-height:25px">医学统计</a></li>
+              <li><a href="/application_solution/paper_edit">论文修订编辑</a></li>
+              <li><a href="/application_solution/training">生物信息学培训</a></li>
+              <li><a href="/application_solution/database" style="line-height:25px">知识库构建</a></li>
+              <li><a href="/application_solution/biomarker" style="line-height:25px">BioMaker的发现与验证</a></li>
+            </ul>
+          </div>
+          <div class="warp_Submenu short">
+            <ul>
+              <li style="border-bottom:0px;margin-left:0px;" class="head" ><big><b><a href="/news">新闻动态</a></b></big></li>
+              <li><a href="/news/information" style="line-height:25px">行业资讯</a></li>
+              <li><a href="/news/activity" style="line-height:25px">公司活动</a></li>
+            </ul>
+          </div>
+          <div class="warp_Submenu middle">
+            <ul>
+              <li style="border-bottom:0px;margin-left:0px;" class="head" ><big><b><a href="/about_us">关于我们</a></b></big></li>
+              <li><a href="/about_us/introduction" style="line-height:25px">公司简介</a></li>
+              <li><a href="/about_us/partners" style="line-height:25px">合作伙伴</a></li>
+              <li><a href="/about_us/contact_us" style="line-height:25px">联系我们</a></li>
+              <li><a href="/about_us/intellectual_property" style="line-height:25px">企业知识产权</a></li>
+            </ul>
+          </div>
+        </div><!-- /.col-lg-3 -->
+
+        <div class="col-lg-9 pull-right">
+
+          <%= yield %>
+        </div>
+      </div> 
+
+    </div>
+
+    <%= erb :footer %>
+   
+    <script src="/lib/bootstrap/assets/js/jquery.js"></script>
+    <script src="/lib/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script src="/lib/bootstrap/assets/js/holder.js"></script>
+    <script src="/lib/bootstrap/assets/js/bootstrap-hover-dropdown.min.js"></script>
+    <script>
+      $(document).ready(function(){
+        $("img.lazy").unveil();
+
+        $.scrollUp({
+              scrollName: 'scrollUp', // Element ID
+              topDistance: '300', // Distance from top before showing element (px)
+              topSpeed: 300, // Speed back to top (ms)
+              animation: 'fade', // Fade, slide, none
+              animationInSpeed: 200, // Animation in speed (ms)
+              animationOutSpeed: 200, // Animation out speed (ms)
+              scrollText: '', // Text for element
+              activeOverlay: false  // Set CSS color to display scrollUp active point, e.g '#00FFFF'
+        });
+      });
+    </script>
+
+    <script type="text/javascript">
+    var _bdhmProtocol = (("https:" == document.location.protocol) ? " https://" : " http://");
+    document.write(unescape("%3Cscript src='" + _bdhmProtocol + "hm.baidu.com/h.js%3F3d8e7fc0de8a2a75f2ca3bfe128e6391' type='text/javascript'%3E%3C/script%3E"));
+    </script>   
+
+
+
+  </body>
+</html>   
